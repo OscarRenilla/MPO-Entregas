@@ -2,13 +2,13 @@
 
 public class Main {
     public static void main(String[] args) {
-        int suma = 0;
-        for (int i = 0; i <= 20; i++){
-            int cuadrado = i * i;
-            if (i % 2 != 0){
-                suma = suma + cuadrado;
-            }
+        long suma = 0;
+        for (int i = 1; i <= 415000; i += 2) {
+            long cuadrado = (long) i * i;
+            suma += cuadrado;
         }
         System.out.println("La suma es: " + suma);
     }
 }
+
+//Encuentra la suma de todos los múltiplos de 3 o 5 a continuación de 1000.
